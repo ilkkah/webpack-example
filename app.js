@@ -8,13 +8,5 @@ import Italic from 'quill/formats/italic';
 import Header from 'quill/formats/header';
 
 
-Quill.register({
-  'modules/toolbar': Toolbar,
-  'themes/snow': Snow,
-  'formats/bold': Bold,
-  'formats/italic': Italic,
-  'formats/header': Header
-});
-
 
 export default Quill;

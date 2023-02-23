@@ -1,0 +1,30 @@
+<style>
+	#editor {
+		margin: 0 auto;
+		border: solid 1px #aaa;
+		height: 500px;
+		box-sizing: border-box;
+		font-size: 20px;
+	}
+
+	#editor .ql-editor {
+		box-sizing: border-box;
+		height: 100%;
+		padding: 1em;
+	}
+
+	#editor .ql-editor *:first-child {
+		margin-top: 0;
+	}
+
+	:focus-visible {
+ 	   outline: none;
+	}	
+</style>
+<div id="editor"></div>
+<script src="dist/bundle.js"></script>
+<script>
+var quill = new Quill('#editor', {});	
+quill.focus();
+</script>
+
